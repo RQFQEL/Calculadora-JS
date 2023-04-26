@@ -1,0 +1,24 @@
+body{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.fundo1{
+    border: 5px solid red;
+    width: 18%;
+    height: 100%;
+    padding: 7px;
+}
+
+.fundo2{
+    border: 5px solid rgb(253, 0, 0);
+    height: 93% ;
+    width: 94,5%;
+    padding: 7px;
+}
+
+.valores{
+    margin-top: 10px;
+
+}

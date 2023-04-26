@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title> 
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+<body>
+    <div class="fundo1">
+        <div class="fundo2">
+            <section>
+                <form>
+                    <div class="valores">
+                        <div>
+                            <label> <b>valor 1</b> </label>
+                            <input id="v1" type="number" style="background-color: yellow;">
+                        </div>
+                        <div>
+                            <label> <b>valor 2</b> </label>
+                            <input id="v2" type="number" style="background-color: yellow;">
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <div class="opcoesAritmeticas">
+                <h3> <b>opcoes </h3>
+                    <div>
+                        <input onchange="disflag()" type="checkbox" id="soma" name="soma" >
+                        <label for="scales">Soma</label>
+                    </div>
+                    <div>
+                        <input onchange="disflag()" type="checkbox" id="subtracao" name="subtracao" >
+                        <label for="scales">Subtracao</label>
+                      </div>
+                      <div>
+                        <input onchange="disflag()" type="checkbox" id="multiplicacao" name="multiplicacao" >
+                        <label for="scales">multiplicacao</label>
+                      </div>
+                      <div>
+                        <input onchange="disflag()" type="checkbox" id="divisao" name="divisao" >
+                        <label for="scales">Divisao</label>
+                      </div>
+            </div>
+            <div class="resultado">
+                <h2>resultado: </h2>
+                <section>
+                    <form>
+
+                        <p id="saida"></p>
+                        <output name="resultado" for="catAWeight catBWeight"></output>
+                    </form>
+                </section>
+            </div>
+
+            <button onclick="resultado()">calcular</button>
+
+        </div>
+    </div>
+    <script src="JS/back.js"></script>
+    
+    
+</body>
+</html>
